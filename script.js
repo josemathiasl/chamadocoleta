@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const ctoFtta = removerAcentos(document.getElementById('ctoFtta').value.toUpperCase());
         const potencia = removerAcentos(document.getElementById('potencia').value.toUpperCase());
         const periodo = removerAcentos(document.getElementById('periodo').value.toUpperCase());
-
+        const contatoOS = removerAcentos(document.getElementById('contatoOS').value.toUpperCase());
+        
         // Coleta dos serviços extras selecionados
         const pontoExtraSelecionado = document.getElementById('instalacaoPontoExtra').value;
         const isencaoOS = document.getElementById('isençãoOS').checked;
@@ -83,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return `
         CLIENTE: ${removerAcentosETornarMaiusculas(cliente)}____
         CONTATO: ${removerAcentosETornarMaiusculas(telefone)}____
+        CONTATO QUE GEROU A OS: ${contatoOS}
         ENDERECO: ${removerAcentosETornarMaiusculas(endereco)}____
          PONTO DE REFERENCIA: ${removerAcentosETornarMaiusculas(referencia)}____
         ID: ${removerAcentosETornarMaiusculas(id)}____
